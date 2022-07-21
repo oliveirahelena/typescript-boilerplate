@@ -6,7 +6,7 @@
   "author": "Helena Oliveira <helena@informach.com.br>",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/index.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/index.ts",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
